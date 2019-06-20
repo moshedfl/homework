@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html dir="rtl">
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>לימוד משניות</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="Regular.css" />
+		<link rel="stylesheet" href="max-width767.css" />
+		<script src="Mishnayot.js"></script>
+	</head>
+	<body>
+		<header id="header">
+			<div class="row">
+				<div class="col-sm-2 header_asite"></div>
+				<div class="col-sm-8 col-xs-12 head-anim">
+					<h1>לימוד משניות</h1>
+					<h2>לעילוי נשמת יקירכם</h2>
+					<div class="anim_kids">
+						<h1>ע"י תינוקות של בית רבן</h1>
+						<h2>שלא טעמו טעם חטא</h2>
+					</div>
+					<button onclick="video()" class="anim_class">
+						<h2>לחץ להיכנס לכיתה</h2>
+					</button>
+				</div>
+				<div class="col-sm-2 header_asite"></div>
+			</div>
+		</header>
+		<div class="row">
+			<div class="col-sm-2 burning_candle"></div>
+			<section class="col-sm-8 col-xs-12" id="Details">
+				<h3 class="Detailsh3">עדכן פרטי ההנצחה ובזה תעשה נחת רוח לנשמת יקירך במקום מנוחתה</h3>
+				<div class="form-name">
+					<form>
+						<h3>שם הנפטר/ת</h3>
+						<label>שם:</label>
+						<input id="name" placeholder="הזן שם הנפטר/ת" type="text"/><br><br>
+						<label>ב"ר</label>
+						<input id="Fathers_name" placeholder="הזן שם אב הנפטר/ת" type="text"/><br><br><br>
+					</form>
+				</div>
+				<div class="form-date">
+					<form>
+						<h3>תאריך הפטירה</h3>
+						<label>יום:</label>
+						<select id="day">
+							<option>יום</option><option>א'</option><option>ב'</option><option>ג'</option><option>ד'</option><option>ה'</option><option>ו'</option><option>ז'</option><option>ח'</option><option>ט'</option><option>י'</option><option>י"א</option><option>י"ב</option><option>י"ג</option><option>י"ד</option><option>ט"ו</option><option>ט"ז</option><option>י"ז</option><option>י"ח</option><option>י"ט</option><option>כ'</option><option>כ"א</option><option>כ"ב</option><option>כ"ג</option><option>כ"ד</option><option>כ"ה</option><option>כ"ו</option><option>כ"ז</option><option>כ"ח</option><option>כ"ט</option><option>ל'</option>
+						</select>
+						<label>חודש:</label>
+						<select id="month">
+							<option>חודש</option><option>ניסן</option><option>אייר</option><option>סיון</option><option>תמוז</option><option>אב</option><option>אלול</option><option>תשרי</option><option>חשון</option><option>כסליו</option><option>טבת</option><option>שבט</option><option>אדר א'</option><option>אדר ב'</option>
+						</select><br><br>
+						<label>שנה:</label>
+						<input id="Year" placeholder="הזן שנת הפטירה" type="text"/><br><br><br>
+					</form>
+				</div>
+			</section>
+			<div class="col-sm-2 burning_candle"></div>	
+		</div>
+		<div class="divider">
+			<br><br><h1>בחר זכות הנצחה</h1>
+		</div>
+		<div class="row">
+			<div class="col-sm-2 burning_candle1"></div>	
+			<section class="col-sm-8" id="Packages-main">
+				<div class="Package1">
+					<img class="candle_small" src="img/candle_small.gif"/>
+					<h3>נר זיכרון</h3><br>
+					תינוקות של בית רבן ילמדו משניות לעילוי נשמת יקירכם "ביום היארצייט" ויזכירו את שמו לזיכרון לפני ה' ותהא נשמתו צרורה בצרור החיים
+					<br><br><h3>$180</h3>
+					<button onclick="paymentForm1()" class="btn_Package">בחר</button>
+				</div>
+				<div class="Package2">
+					<img class="candle_small" src="img/candle_small.gif"/>
+					<h3>נר שלושים</h3><br>
+					תינוקות של בית רבן ילמדו משניות לעילוי נשמת יקירכם "בכל יום מימי השלושים וכן ביום היארצייט הראשון" ויזכירו את שמו לזיכרון לפני ה' ותהא נשמתו צרורה בצרור החיים
+					<br><br><h3>$360</h3>
+					<button onclick="paymentForm2()" class="btn_Package">בחר</button>
+				</div>
+				<div class="Package3_4">
+					<div class="Package3">
+						<img class="candle_small" src="img/candle_small.gif"/>
+						<h3>נר נשמה</h3><br>
+						תינוקות של בית רבן ילמדו משניות לעילוי נשמת יקירכם "בכל יום מימי הי"א חודש וכן ביום היארצייט הראשון" ויזכירו את שמו לזיכרון לפני ה' ותהא נשמתו צרורה בצרור החיים
+						<br><br><h3>$720</h3>
+						<button onclick="paymentForm3()" class="btn_Package">בחר</button>
+					</div>
+					<div class="Package4">
+						<img class="candle_small" src="img/candle_small.gif"/>
+						<h3>נר תמיד</h3><br>
+						תינוקות של בית רבן ילמדו משניות לעילוי נשמת יקירכם "בכל יום מימי הי"א חודש וכן ביום היארצייט שבכל שנה ושנה" ויזכירו את שמו לזיכרון לפני ה' ותהא נשמתו צרורה בצרור החיים
+						<br><br><h3>$1800</h3>
+						<button onclick="paymentForm4()" class="btn_Package">בחר</button>
+					</div>
+				</div>
+				<div class="profit">
+					<div class="profit1">
+						<img class="profit_img" src="img/Star_of_David.png"/>
+						<h3>גמילת חסד של אמת</h3><br>
+					</div>
+					<div class="profit1">
+						<img class="profit_img" src="img/Bible.png"/>
+						<h3>החזקת תורה</h3><br>
+					</div>
+					<div class="profit1">
+						<img class="profit_img" src="img/parents.png"/>
+						<h3>כיבוד הורים</h3><br>
+					</div>
+					<div class="profit1">
+						<img class="profit_img" src="img/charity.png"/>
+						<h3>צדקת עניי ארץ ישראל</h3><br>
+					</div>
+					</div>
+			</section>
+			<div class="col-sm-2 burning_candle1"></div>
+		</div>
+		<nav>
+			<div id="video">
+				<span>Video not yet installed</span><br><br><br><br>
+				<button onclick="videoOf()" class="btn_Package">סגור</button>
+			</div>
+			<button onclick="menuOn()" id="menu_btn">
+				<img id="menu_img" src="img/hamburger.png"/>
+			</button>
+			<button onclick="menuOf()" id="close_btn">
+				<img id="close_img" src="img/close.png"/>
+			</button>
+			<ul id="menu" dir="ltr">
+				<a href="#Details">
+					<li class="menu" title="למילוי פרטי הנצחה">טופס</li>
+				</a>
+				<a href="#Packages-main">
+					<li class="menu" title="לבחירת הנצחה">בחירה</li>
+				</a>
+				<a href="#Address">
+					<li class="menu" title="לפרטים שלנו">פרטים</li>
+				</a>
+				<a onclick="ContactForm()">
+					<li class="menu" title="ליצור אתנו קשר">צור קשר</li>
+				</a>
+			</ul>
+			<form id="Contact_form">
+				<h4>מלא פרטיך ופרטי הפנייה שלך ונחזור אליך בהקדם</h4>
+				<label>שם:</label>
+				<input placeholder="הזן את שמך המלא" type="text"/><br><br>
+				<label>מייל:</label>
+				<input placeholder="הזן כתובת מייל" type="email"/><br><br><br>
+				<label>כתוב:</label>
+				<textarea rows="5" placeholder="כתוב כאן את הפנייה שלך"></textarea><br><br>
+				<button onclick="ContactFormOf()" class="btn_Package">שלח</button>
+			</form>
+			<div id="Payment_form" onload="paymentForm()">
+				<span class="small_span">בחרת לזכות בזכות לימוד משניות<br>
+				לעילוי נשמת   <span id="name_to_pay"></span>   ב"ר   <span id="Fathers_name_to_pay"></span>   ע"ה<br>
+				שהלכה לעולמה ביום   <span id="day_to_pay"></span><span id="month_to_pay"></span><span id="Year_to_pay"></span></span><br>
+				<span class="small_span" id="Commitment"></span><br>
+				<span class="small_span">וזכות החזקת התורה יעמוד לך ולזרעך, ויקוים בך ברכת ברוך אשר יקום את דברי התורה הזאת, ותזכו למצוות וכט"ס.</span>
+				<hr>
+				<h4>מלא פרטיך ופרטי התשלום בכדי לסיים לקלוט ההנצחה</h4>
+				<form id="form1">
+					<label>שם:</label><br>
+					<input placeholder="הזן את שמך המלא" type="text"/><br><br>
+					<label>טלפון:</label><br>
+					<input placeholder="הזן מספר טלפון" type="tel"/><br><br>
+					<label>מייל:</label><br>
+					<input placeholder="הזן כתובת מייל" type="email"/><br><br>
+					<label>הערות</label><br>
+					<textarea rows="4" placeholder="צרף כאן את ההערות שלך"></textarea>
+				</form>
+				<form id="form2">
+					<div id="Credit_Card">
+						<h4>מלא פרטי כרטיס אשראי</h4>
+						<input id="cvv" placeholder="cvv" type="text"/>
+						<input id="Credit_num" placeholder="____-____-____-____" type="text"/><br><br>
+						<select>
+							<option>חודש</option><option>01</option><option>02</option><option>03</option><option>04</option><option>05</option><option>06</option><option>07</option><option>08</option><option>09</option><option>10</option><option>11</option><option>12</option>
+						</select>
+						<select>
+							<option>שנה</option><option>2017</option><option>2018</option><option>2019</option><option>2020</option><option>2021</option><option>2022</option><option>2023</option><option>2024</option><option>2025</option><option>2026</option><option>2027</option><option>2028</option>
+						</select>
+					</div><br>
+					<span class="small_span">סכום התרומה:</span><span id="Amount_to_pay"></span><br><br>
+					<label>מספר תשלומים:</label>
+					<select>
+						<option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option>
+					</select><br><br>
+				</form>
+				<button onclick="paymentFormOf()" class="btn_Package">שלח</button>
+			</div>
+			<a href="#header">
+				<button class="go_to_up" title="עלה למעלה"></button>
+			</a>
+		</nav>
+		<footer>
+			<div class="scool_information">
+				<div id="rigt_site_map">
+				</div>
+				<div class="google-map">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3393.311992003482!2d34.993226020135054!3d31.734683981390734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1502c47cea960105%3A0x42acd6cb9583f8db!2z15DXldeU15wg15nXlNeV16nXoiAyLCDXkdeZ16og16nXntep!5e0!3m2!1siw!2sil!4v1511283095779" height="300px" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div>
+				<div class="School_details">
+					<div class="School_details1">
+						<img id="logo" src="img/logo.png"/>
+						<h4>תלמוד תורה</h4>
+						<h4>"תולדות יעקב יוסף"</h4>
+						דחסידי סקווירא - בית שמש<br>
+						בנשיאות כ"ק מרן אדמו"ר שליט"א
+					</div>
+					<div class="School_details2">	
+						<img id="Address" src="img/Address.png"/>רח' אוהל יהושע 2 בית שמש<br>
+						<img id="phone" src="img/phone.png"/>072-240-5314<br>
+						<img id="fax" src="img/fax.png"/>072-240-5315<br>
+						<img id="Email" src="img/Email.png"/>8434513@gmail.com<br>
+					</div>
+				</div>
+			</div>
+			<div class="co">
+				בנייה: M.D.F. - Web       © כל הזכיות שמורות 
+			</div>
+		</footer>
+	</body>
+</html>

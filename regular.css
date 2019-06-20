@@ -1,0 +1,387 @@
+body{
+	margin:0;
+	text-align:center;
+	background:rgb(0, 0, 0);
+	max-width:3000px;
+}
+.row{
+	margin:0;
+}
+.col-sm-2, .col-sm-3, .col-sm-6,.col-sm-8{
+	padding:0;
+}
+/*header*/
+header{
+	height:637px;
+	background: linear-gradient(to bottom, rgb(0, 209, 185) 0,rgb(0, 209, 185) 98%,rgb(0, 209, 185) 98%,rgb(255, 0, 0 ) 100%)
+}
+.head-anim, .header_asite, .anim_kids, .anim_class{
+	height:630px;
+}
+.header_asite{
+	z-index:1;
+	background:rgb(0, 209, 185);
+}
+.head-anim{
+	box-shadow:inset 3px 3px 50px black;
+	background: url(img/big_candles.jpg) no-repeat top center;
+	background-size:cover;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+}
+.head-anim h1{
+	color:rgb(245, 245, 220);
+	font-size:120px;
+	text-shadow: 10px 10px 10px black;
+	word-spacing:180px;
+	font-family:david, 'Times New Roman';
+	font-weight:bold;
+}
+.head-anim h2{
+	color:rgb(245, 245, 220);
+	font-size:50px;
+	text-shadow: 8px 8px 8px black;
+	word-spacing:20px;
+	font-family:david, 'Times New Roman';
+	font-weight:bold;
+}
+.anim_kids, .anim_class{
+	position:absolute;
+	top:-100%;
+	width:-webkit-fill-available;
+}
+.anim_kids{
+	background: url(img/kids.jpg) no-repeat right;
+	background-size:cover;
+	animation: header_anim 27s linear 4s infinite;
+	display: flex;
+	justify-content: flex-end;
+	flex-direction: column;
+}
+.anim_kids h1{
+	word-spacing:30px;
+	font-size:70px;
+}
+	
+.anim_class{
+	background: url(img/class.png) no-repeat top center;
+	background-size:cover;
+	animation: header_anim 27s linear 17s infinite;
+	display:block;
+	padding-top:400px;
+}
+@keyframes header_anim{
+		0% {top: -100%;}
+		10% {top: 0px; right: 0%;}
+		30% {top: 0px; right: 0%;}
+		35% {top: 0px; right: -100%;}
+		99.99% {top: 0px; right: -100%;}
+		100% {top: -100%;}
+}
+/*sections*/
+section{
+	background:rgb(245, 245, 220);
+	margin:auto;
+}
+#Details,.burning_candle{
+	display:inline-block;
+}
+.burning_candle{
+	height:300px;
+	background: url(img/burning_candle.gif)  no-repeat bottom center;
+	background-size: cover;
+}
+#Details h3{
+	padding:25px;
+	margin:auto;
+}
+.Detailsh3{	
+	box-shadow:inset 10px 10px 45px black;
+	border-width:30px 110px 1px 105px;
+	border-color:rgb(245, 245, 220);
+	border-style:solid;
+}
+.form-name,.form-date{
+	min-width:48%;
+	display:inline-block;
+	border-width:30px 85px 30px 80px;
+	border-color:rgb(245, 245, 220);
+	border-style:solid;
+	box-shadow:inset 10px 10px 45px black;
+}
+input, textarea{
+	width:200px;
+	padding:6px;
+	border-radius:6px;
+}
+select{
+	width:82px;
+	padding:8px;
+	border-radius:6px;
+}
+.divider{
+	min-height:300px;
+	background:rgb(0, 209, 185);
+}
+.divider h1{
+	color:black;
+	animation: divider_anim 0.4s linear 0s infinite;
+}
+@keyframes divider_anim{
+	0%{color:black;}
+	50%{color:white}
+	100%{color:black;}
+}
+#Packages-main, .burning_candle1{
+	display:inline-block;
+}
+.burning_candle1{
+	height:550px;
+	background-image: url(img/burning_candle1.gif);
+	background-repeat:no-repeat;
+	background-position:bottom center;
+	background-size:cover;
+	bottom:-185px;
+}
+#Packages-main{
+	position:relative;
+	top:-180px;
+	min-height:600px;
+	background: linear-gradient(to bottom, rgb(0, 209, 185) 0,rgb(0, 209, 185) 172px,rgb(245, 245, 220) 172px,rgb(245, 245, 220) 100%)
+}
+.Package3_4{
+	display:inline-block;
+}
+.Package1, .Package2, .Package3, .Package4{
+	height:550px;
+	width:220px;
+	display:inline-block;
+	margin:0 8px 8px 8px;
+	background:rgb(245, 245, 220);
+	box-shadow: 2px 2px 30px black;
+	padding:28px;
+	font-size:16px;
+	line-height:25px;
+}
+.Package1{
+	line-height:31.5px;
+}
+.candle_small{
+	height:60px;
+	width:60px;
+	border-radius:50%;
+}
+.btn_Package{
+	font-size:20px;
+	line-height:25px;
+	color:#fff;
+	padding:4px 25px;
+	background:	rgb(90, 90, 90);
+	border:2px solid white;
+	border-radius:5px;
+	box-shadow: 4px 4px 20px black;
+	margin:25px;
+}
+.btn_Package:hover {
+	padding:5px 25px;
+	font-size:22px;
+	color:rgb(0, 209, 185);
+	border:1px solid rgb(0, 209, 185);
+} 
+.profit{
+	min-height:182px;
+	background:rgb(245, 245, 220);
+	position:relative;
+	bottom:-180px;
+}
+.profit1{
+	height:150px;
+	width:24%;
+	display:inline-block;
+}
+.profit1 h3{
+	height:55px;
+}
+.profit_img{
+	height:100px;
+	width:100px;
+}
+/*nav*/
+#video{
+	width:40%;
+	height:400px;
+	position:absolute;
+	top:150px;
+	left:30%;
+	z-index:2;
+	background:white;
+	box-shadow: 10px -10px 30px black;
+	padding-top:105px;
+	display:none;
+}
+#video span{
+	font-size:45px;
+	color:black;
+}
+#menu_btn, #close_btn{
+	display:none;
+	position:absolute;
+	top:50px;
+	left:0px;
+	z-index:0;
+}
+#menu{
+	position:absolute;
+	top:50px;
+	left:-2px;
+	z-index:2;
+	list-style:none;
+	color:rgb(245, 245, 220);
+	font-size:20px;
+	padding:0;
+}
+#menu a{
+	color:rgb(245, 245, 220);
+}
+.menu{
+	width:85px;
+	padding:6px;
+	border:3px double white;
+	background:rgb(90, 90, 90);
+	margin-top:3px;
+	border-radius:0 18px 18px 0;
+	transition:width 0.5s;
+}
+.menu:hover{
+	width:120px;
+}
+#Contact_form{
+	width:250px;
+	position:absolute;
+	top:260px;
+	left:10px;
+	z-index:2;
+	font-size:15px;
+	padding:10px;
+	background:rgb(245, 245, 220);
+	border:5px double rgb(90, 90, 90);
+	border-radius:18px;
+	box-shadow: 10px -10px 30px black;
+	display:none;
+}
+#Payment_form{
+	width:50%;
+	position:absolute;
+	top:1200px;
+	left:25%;
+	z-index:2;
+	font-size:15px;
+	padding:10px;
+	background:silver;
+	border:5px double rgb(90, 90, 90);
+	border-radius:18px;
+	box-shadow: 10px -10px 30px black;
+	display:none;
+}
+#form1, #form2{
+	display:inline-block;
+	width:49%;
+}
+.small_span{
+	font-family:david;
+	font-size:20px;
+}
+#name_to_pay, #Fathers_name_to_pay, #day_to_pay, #month_to_pay, #Year_to_pay, #Amount_to_pay{
+	font-family:david;
+	font-size:30px;
+	font-weight:bold;
+}
+#Credit_Card{
+	background:rgb(90, 90, 90);
+	width:300px;
+	margin:auto;
+	padding:20px;
+	border-radius:15px;
+	box-shadow: 7px -7px 20px gray;
+	margin-top:40px;
+}
+#Credit_Card h4{
+	color:white;
+}
+#cvv{
+	width:50px;
+}
+#Credit_num{
+	width:170px;
+}
+.go_to_up{
+	height:40px;
+	width:40px;
+	background:gray url(img/arrow_up.png) no-repeat center;
+	background-size:30px 30px;
+	position:fixed;
+	bottom:0px;
+	left:8px;
+	border-radius:20px 20px 0 0;
+}
+.go_to_up:hover{
+	height:60px;
+	background-size:30px 40px;
+}
+/*footer*/
+.scool_information{
+	background:rgb(0, 209, 185);
+	padding-top:14px;
+	padding-bottom:15px;
+	min-height:325px;
+}
+.scool_information div{
+	float:right;
+}
+.google-map {
+	width:25%;
+}
+.google-map iframe{
+	width:100%;
+}	 	
+.School_details, #rigt_site_map {
+	height:315px;
+	width:37%;
+	padding:210px 5px 15px;
+	color:rgb(90, 90, 90);
+}
+.School_details h4{
+	margin:3px 0; 
+}
+.School_details hr{
+	width:40%;
+	margin:8px 0; 
+}
+.School_details1{
+	text-align:right;
+	width:65%;
+	border-left:1px solid white;
+	margin-left:4px;
+	line-height:24px;
+}
+
+.School_details2{
+	text-align:right;
+	width:30%;
+}
+#logo{
+	height:100px;
+	width:140px;
+	float:right;
+}
+#Address, #phone, #fax, #Email{
+	height:20px;
+	width:20px;
+	margin-top:4px;
+}
+.co{
+	color:rgb(255,255,255);
+	background:rgb(90, 90, 90);
+	padding:15px;
+}
